@@ -1,8 +1,13 @@
 import { StyleSheet, Image } from "react-native";
 
 import { Text, View } from "./Themed";
+import { TweetType } from "../types";
 
-export default function Tweet({ tweet }) {
+type TweetProps = {
+  tweet: TweetType
+}
+
+export default function Tweet({ tweet }: TweetProps) {
   return (
     <View style={styles.twitContainer}>
       <Image source={{ uri: tweet.user.image }} style={styles.userImage} />
