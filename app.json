@@ -22,7 +22,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ghsantos.twitterclone",
+      "versionCode": 2
     },
     "web": {
       "bundler": "metro",
@@ -43,6 +45,12 @@
         "projectId": "0b002e23-a3b8-42a8-a35d-9aa486c8b627"
       }
     },
-    "owner": "ghsantos"
+    "owner": "ghsantos",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0b002e23-a3b8-42a8-a35d-9aa486c8b627"
+    }
   }
 }
