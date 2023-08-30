@@ -24,7 +24,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.ghsantos.twitterclone",
-      "versionCode": 2
+      "versionCode": 3
     },
     "web": {
       "bundler": "metro",
