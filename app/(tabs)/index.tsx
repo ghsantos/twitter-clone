@@ -1,12 +1,11 @@
-import { StyleSheet, Image, FlatList, Pressable } from "react-native";
-import { Entypo } from '@expo/vector-icons';
+import React from 'react'
+import { StyleSheet, FlatList, Pressable } from 'react-native'
+import { Entypo } from '@expo/vector-icons'
+import { Link } from 'expo-router'
 
-import { Text, View } from "../../components/Themed";
-import Tweet from "../../components/Tweet";
-
-import tweets from "../../assets/data/tweets";
-import { Link } from "expo-router";
-const tweet = tweets[0];
+import { View } from '../../components/Themed'
+import Tweet from '../../components/Tweet'
+import tweets from '../../assets/data/tweets'
 
 export default function TabOneScreen() {
   return (
@@ -22,7 +21,7 @@ export default function TabOneScreen() {
         </Pressable>
       </Link>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -41,7 +40,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 20,
     right: 25,
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -49,5 +48,5 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
-  }
-});
+  },
+})

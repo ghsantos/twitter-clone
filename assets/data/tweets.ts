@@ -132,6 +132,6 @@ const tweets = [
     numberOfRetweets: 11,
     numberOfLikes: 99,
   },
-];
+]
 
-export default tweets;
+export default tweets

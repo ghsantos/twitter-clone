@@ -1,7 +1,14 @@
-import { useState } from "react";
-import { Image, Pressable, StyleSheet, TextInput, SafeAreaView } from "react-native";
-import { Text, View } from "../components/Themed";
-import { Link, useRouter } from "expo-router";
+import React, { useState } from 'react'
+import {
+  Image,
+  Pressable,
+  StyleSheet,
+  TextInput,
+  SafeAreaView,
+} from 'react-native'
+import { Link, useRouter } from 'expo-router'
+
+import { Text, View } from '../components/Themed'
 
 const user = {
   id: 'u1',
@@ -23,7 +30,9 @@ export default function NewTweet() {
     <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
       <View style={styles.container}>
         <View style={styles.buttonContainer}>
-          <Link href="../" style={{ fontSize: 18 }}>Cancel</Link>
+          <Link href="../" style={{ fontSize: 18 }}>
+            Cancel
+          </Link>
           <Pressable onPress={onTweetPress} style={styles.button}>
             <Text style={styles.buttonText}>Tweet</Text>
           </Pressable>
@@ -42,7 +51,7 @@ export default function NewTweet() {
         </View>
       </View>
     </SafeAreaView>
-  )  
+  )
 }
 
 const styles = StyleSheet.create({
@@ -76,5 +85,5 @@ const styles = StyleSheet.create({
     aspectRatio: 1,
     borderRadius: 50,
     marginRight: 12,
-  }
+  },
 })

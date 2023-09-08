@@ -1,9 +1,9 @@
-import { useGlobalSearchParams } from "expo-router";
+import React from 'react'
+import { useGlobalSearchParams } from 'expo-router'
 
-import { Text, View } from "../../components/Themed";
-
-import tweets from "../../assets/data/tweets";
-import Tweet from "../../components/Tweet";
+import { Text } from '../../components/Themed'
+import tweets from '../../assets/data/tweets'
+import Tweet from '../../components/Tweet'
 
 export default function TweetScreen() {
   const { id } = useGlobalSearchParams()
@@ -13,7 +13,5 @@ export default function TweetScreen() {
     return <Text>Tweet not found!</Text>
   }
 
-  return (
-    <Tweet tweet={tweet} />
-  )
+  return <Tweet tweet={tweet} />
 }

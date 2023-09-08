@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 import { EvilIcons } from '@expo/vector-icons'
 
-import { Text, View } from "./Themed";
+import { Text, View } from './Themed'
 
 type IconButtonProps = {
   icon: React.ComponentProps<typeof EvilIcons>['name']

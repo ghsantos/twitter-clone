@@ -1,11 +1,11 @@
-import React from "react";
-import { StyleSheet, Image, Pressable } from "react-native";
+import React from 'react'
+import { StyleSheet, Image, Pressable } from 'react-native'
 import { Entypo } from '@expo/vector-icons'
-import { Link } from "expo-router";
+import { Link } from 'expo-router'
 
-import { Text, View } from "./Themed";
-import IconButton from "./IconButton";
-import { TweetType } from "../types";
+import { Text, View } from './Themed'
+import IconButton from './IconButton'
+import { TweetType } from '../types'
 
 type TweetProps = {
   tweet: TweetType
@@ -28,7 +28,7 @@ export default function Tweet({ tweet }: TweetProps) {
             />
           </View>
           <Text style={styles.content}>{tweet.content}</Text>
-          
+
           {!!tweet.image && (
             <Image source={{ uri: tweet.image }} style={styles.image} />
           )}
@@ -43,16 +43,16 @@ export default function Tweet({ tweet }: TweetProps) {
         </View>
       </Pressable>
     </Link>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   twitContainer: {
-    flexDirection: "row",
-    width: "100%",
+    flexDirection: 'row',
+    width: '100%',
     padding: 10,
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderColor: 'lightgrey'
+    borderColor: 'lightgrey',
   },
   mainContainer: {
     marginLeft: 15,
@@ -85,4 +85,4 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     justifyContent: 'space-between',
   },
-});
+})
