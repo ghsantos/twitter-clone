@@ -2,8 +2,8 @@ import React from 'react'
 import { StyleSheet, Button } from 'react-native'
 import * as Updates from 'expo-updates'
 
-import EditScreenInfo from '../../components/EditScreenInfo'
-import { Text, View } from '../../components/Themed'
+import EditScreenInfo from '../../../components/EditScreenInfo'
+import { Text, View } from '../../../components/Themed'
 
 export default function TabTwoScreen() {
   async function onFetchUpdateAsync() {
